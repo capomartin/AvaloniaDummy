@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj": {}
+    "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj": {}
   },
   "projects": {
-    "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj": {
+    "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj",
+        "projectUniqueName": "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj",
         "projectName": "AvaloniaCrossApplication.Android",
-        "projectPath": "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj",
-        "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication.Android\\obj\\",
+        "projectPath": "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication.Android\\AvaloniaCrossApplication.Android.csproj",
+        "packagesPath": "C:\\Users\\Marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication.Android\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,15 +27,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/BrevityLatam/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-android33.0": {
             "targetAlias": "net7.0-android",
             "projectReferences": {
-              "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj": {
-                "projectPath": "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj"
+              "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj": {
+                "projectPath": "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj"
               }
             }
           }
@@ -52,7 +51,7 @@
           "dependencies": {
             "Avalonia.Android": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "(, )"
             },
             "Xamarin.AndroidX.Core.SplashScreen": {
               "target": "Package",
@@ -78,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -96,20 +95,20 @@
         }
       }
     },
-    "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj": {
+    "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj",
+        "projectUniqueName": "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj",
         "projectName": "AvaloniaCrossApplication",
-        "projectPath": "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj",
-        "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Leo\\Proyectos\\Avalonia\\AvaloniaCrossApplication\\obj\\",
+        "projectPath": "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication\\AvaloniaCrossApplication.csproj",
+        "packagesPath": "C:\\Users\\Marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\AvaloniaDummy\\AvaloniaCrossApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -119,8 +118,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/BrevityLatam/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -140,23 +138,23 @@
           "dependencies": {
             "Avalonia": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "(, )"
             },
             "Avalonia.Diagnostics": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "(, )"
             },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "(, )"
             },
             "Avalonia.ReactiveUI": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "(, )"
             },
             "Avalonia.Themes.Fluent": {
               "target": "Package",
-              "version": "[11.0.2, )"
+              "version": "(, )"
             },
             "MvvmLightLibs": {
               "target": "Package",
@@ -179,7 +177,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
