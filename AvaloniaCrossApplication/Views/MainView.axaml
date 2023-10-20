@@ -1,0 +1,72 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:local="clr-namespace:Avalonia.Media.Imaging;assembly=Avalonia.Visuals"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:AvaloniaCrossApplication.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaCrossApplication.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:MainViewModel />
+	</Design.DataContext>
+
+	<!-- <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	 -->
+
+	<Grid Name="MainGrid">
+
+		<DataGrid Margin="20" ItemsSource="{Binding Food}"
+			RenderOptions.BitmapInterpolationMode="HighQuality"
+			AutoGenerateColumns="False"
+			GridLinesVisibility="All"
+			CanUserResizeColumns="True"
+			CanUserSortColumns="False"
+			BorderThickness="1" BorderBrush="Gray">
+			<DataGrid.Columns>
+				<DataGridTemplateColumn Header="Image" Width="1*">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<Image Width="50" Height="50" Source="{Binding ImageFromWebsite^}"/>
+
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+				<DataGridTextColumn Header="Item" Binding="{Binding Item}" Width="1*" FontSize="{Binding #FontSizeSlider.Value, Mode=OneWay}" />
+				<DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="1*" FontSize="{Binding #FontSizeSlider.Value, Mode=OneWay}" />
+				<DataGridCheckBoxColumn Header="✔" Binding="{Binding Select}"/>
+				<DataGridTemplateColumn Header="Action">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<Button
+								HorizontalAlignment="Center"
+								HorizontalContentAlignment="Center"
+								Background="#232323"
+								Content="View"
+								Foreground="White"
+								Click="Button_Click"/>
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+			</DataGrid.Columns>
+		</DataGrid>
+		<Border IsVisible="{Binding Selected}" Grid.RowSpan="3" Background="DimGray" Opacity="0.8"></Border>
+		<StackPanel IsVisible="{Binding Selected}" Background="White">
+			<Image Width="400" Height="400" Source="{Binding Item.ImageFromWebsite^}"/>
+			<TextBlock FontWeight="Bold" TextAlignment="Center" Text="{Binding Item.Item}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<TextBlock Text="Price: u$s" />
+				<TextBlock TextAlignment="Center" Text="{Binding Item.Price}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+			</StackPanel>
+			<Button  HorizontalAlignment="Center"
+			HorizontalContentAlignment="Center"
+			Background="#232323"
+			Foreground="White"
+			Command="{Binding BackItem}">Back</Button>
+
+		</StackPanel>
+	</Grid>
+
+</UserControl>
